@@ -1,0 +1,30 @@
+title: Eric Curtin
+description: Notes on Linux, containers and agents.
+url: https://ericcurtin.github.io
+baseurl: ""
+author:
+  name: Eric Curtin
+  github: ericcurtin
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: /:year/:month/:day/:title/
+timezone: Europe/Dublin
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
